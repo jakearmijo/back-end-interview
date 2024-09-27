@@ -13,8 +13,9 @@ Start with the included `Projection2021.csv` file. Ignore `FeedGrains.csv` for n
 
 Create an API service that provides a GET histogram route for each column in the table. For example, the following URLs should be successfully resolved by the service:
 
-* http://localhost/Commodity/histogram
-* http://localhost/CommodityType/histogram
+* http://localhost/commodity/histogram
+* http://localhost/commodityType/histogram
+* http://localhost/units/histogram
 * Etc.
 
 A GET request on any of these URLs should return HTML with the count of how many times each unique value appears in that column of the data. For example in the Commodity column, “Rice” appears 216 times, “Corn” 240, etc.
@@ -36,5 +37,45 @@ Be prepared to talk about one aspect of this exercise you found interesting, or 
 1. `Projection2021.csv` - sourced from the "USDA Agricultural Baseline Database" for the current year projections https://www.ers.usda.gov/media/u55iwexw/projection2021.zip
 2. `FeedGrains.csv` - sourced from the “USDA Feed Grains: Yearbook Tables” available at https://www.ers.usda.gov/data-products/feed-grains-database/feed-grains-yearbook-tables/
 
+- [x] Using ***TypeSCript*** with any framework(s) you enjoy
+- [ ] Feel free to be creative, but the result NEED NOT BE COMPLEX or excessively time-consuming
+- [ ] We will review your work together during the in-person interview
+- [ ] Send a link to the source, a repository URL or a zip file of your project the day before your interview day -> 
+- [x] Scaffold simple node express application - THAT RUNS
+- [ ] examine URL paths. Do we need several routes?
+- [ ] Create route files for 
+  - [ ] Attribute
+  - [x] Commodity
+  - [x] CommodityType
+  - [ ] Units
+  - [ ] YearType
+  - [ ] Year
+  - [ ] Value
+- [ ] Create a GET request for TABLE LISTED BELOW that rill return JSON with the count of how many times each unique value appears in that column of the data
+  - [ ] Attribute
+  - [ ] Commodity
+  - [ ] CommodityType
+  - [ ] Units
+  - [ ] YearType
+  - [ ] Year
+  - [ ] Value
+- [ ] logic for looping
+- [ ] Visualizations
+- [ ] Testing strategies
+- [ ] Persisting data
+- [ ] Data modeling / analytics
+  - [ ] Zod Schemas per models
+- [ ] API structure / versioning
+- [ ] Docker
 
+
+
+- complete project get routes and data returning
+- any documentation create
+  - routes
+  - controller
+  - models
+  - zod
+- make sure readme instructions work - INCLUDE POSTMAN
+- 
 

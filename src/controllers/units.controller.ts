@@ -1,56 +1,30 @@
 import { Request, Response } from "express";
-import * as fs from "fs";
-import csv from "csv-parser";
-
-interface DataRow {
-  [key: string]: string | number;
-}
-
-function countCommodities(data: DataRow[]): Record<string, number> {
-  const commodityCount: Record<string, number> = {};
-
-  data.forEach((row) => {
-    const element = row["Units"] as string;
-    if (commodityCount[element]) {
-      commodityCount[element]++;
-    } else {
-      commodityCount[element] = 1;
-    }
-  });
-
-  return commodityCount;
-}
-
-async function convertCsvToJson(filePath: string): Promise<DataRow[]> {
-  return new Promise((resolve, reject) => {
-    const results: DataRow[] = [];
-
-    fs.createReadStream(filePath)
-      .pipe(csv())
-      .on("data", (data: DataRow) => results.push(data))
-      .on("end", () => {
-        resolve(results);
-      })
-      .on("error", (error: any) => {
-        reject(error);
-      });
-  });
-}
+import { convertCsvToJson, countCommodities } from "../common/utils/csvUtils";
+import { UnitsResponseSchema, UnitsResponse } from "../schemas/units.schema";
+import { redisClient } from "..";
 
 export const getUnitsHistogram = async (
   req: Request,
   res: Response
-): Promise<void> => {
+): Promise<any> => {
   try {
+    const redisKey = "Projection2021:Units";
+    const cachedData = await redisClient.get(redisKey);
+    if (cachedData) {
+      const cachedResult: UnitsResponse = JSON.parse(cachedData);
+      return res.status(200).json(cachedResult);
+    }
     const filePath = "Projection2021.csv";
     const jsonData = await convertCsvToJson(filePath);
-    
+    const result = countCommodities(jsonData, "Units");
+    UnitsResponseSchema.parse(result);
+    await redisClient.set(redisKey, JSON.stringify(result), {
+      EX: 3600,
+    });
 
-    const result = countCommodities(jsonData);
-
-    res.status(200).json(result);
+    return res.status(200).json(result);
   } catch (error) {
     console.error("Error fetching data:", error);
-    res.status(500).json({ message: "Failed to fetch data." });
+    return res.status(500).json({ message: "Failed to fetch data." });
   }
 };

@@ -1,0 +1,317 @@
+[
+    {
+        "Attribute": "Harvested acres",
+        "Commodity": "Rice",
+        "CommodityType": "Crops",
+        "Units": "Thousand acres",
+        "YearType": "Market year",
+        "Year": "2019/20",
+        "Value": 2472
+    },
+    {
+        "Attribute": "Planted acres",
+        "Commodity": "Rice",
+        "CommodityType": "Crops",
+        "Units": "Thousand acres",
+        "YearType": "Market year",
+        "Year": "2019/20",
+        "Value": 2540
+    },
+    {
+        "Attribute": "Harvested acres",
+        "Commodity": "Corn",
+        "CommodityType": "Crops",
+        "Units": "Million acres",
+        "YearType": "Market year",
+        "Year": "2030/31",
+        "Value": 81.5
+    },
+    {
+        "Attribute": "Harvested acres",
+        "Commodity": "Upland Cotton",
+        "CommodityType": "Crops",
+        "Units": "Million acres",
+        "YearType": "Market year",
+        "Year": "2019/20",
+        "Value": 11.4
+    },
+    {
+        "Attribute": "Harvested acres",
+        "Commodity": "Oats",
+        "CommodityType": "Crops",
+        "Units": "Million acres",
+        "YearType": "Market year",
+        "Year": "2019/20",
+        "Value": 0.8
+    },
+    {
+        "Attribute": "Harvested acres",
+        "Commodity": "Sorghum",
+        "CommodityType": "Crops",
+        "Units": "Million acres",
+        "YearType": "Market year",
+        "Year": "2019/20",
+        "Value": 4.7
+    },
+    {
+        "Attribute": "Harvested acres",
+        "Commodity": "Sorghum",
+        "CommodityType": "Crops",
+        "Units": "Million acres",
+        "YearType": "Market year",
+        "Year": "2020/21",
+        "Value": 5
+    },
+    {
+        "Attribute": "Harvested acres",
+        "Commodity": "Wheat",
+        "CommodityType": "Crops",
+        "Units": "Million acres",
+        "YearType": "Market year",
+        "Year": "2019/20",
+        "Value": 37.4
+    },
+    {
+        "Attribute": "Harvested acres",
+        "Commodity": "Wheat",
+        "CommodityType": "Crops",
+        "Units": "Million acres",
+        "YearType": "Market year",
+        "Year": "2020/21",
+        "Value": 36.7
+    },
+    {
+        "Attribute": "Harvested acres",
+        "Commodity": "Wheat",
+        "CommodityType": "Crops",
+        "Units": "Million acres",
+        "YearType": "Market year",
+        "Year": "2021/22",
+        "Value": 38.5
+    },
+    {
+        "Attribute": "Planted acres",
+        "Commodity": "Barley",
+        "CommodityType": "Crops",
+        "Units": "Million acres",
+        "YearType": "Market year",
+        "Year": "2019/20",
+        "Value": 2.8
+    },
+    {
+        "Attribute": "Planted acres",
+        "Commodity": "Barley",
+        "CommodityType": "Crops",
+        "Units": "Million acres",
+        "YearType": "Market year",
+        "Year": "2020/21",
+        "Value": 2.6
+    },
+    {
+        "Attribute": "Planted acres",
+        "Commodity": "Corn",
+        "CommodityType": "Crops",
+        "Units": "Million acres",
+        "YearType": "Market year",
+        "Year": "2019/20",
+        "Value": 89.7
+    },
+    {
+        "Attribute": "Planted acres",
+        "Commodity": "Corn",
+        "CommodityType": "Crops",
+        "Units": "Million acres",
+        "YearType": "Market year",
+        "Year": "2020/21",
+        "Value": 91
+    },
+    {
+        "Attribute": "Planted acres",
+        "Commodity": "Corn",
+        "CommodityType": "Crops",
+        "Units": "Million acres",
+        "YearType": "Market year",
+        "Year": "2021/22",
+        "Value": 90
+    },
+    {
+        "Attribute": "Planted acres",
+        "Commodity": "Upland Cotton",
+        "CommodityType": "Crops",
+        "Units": "Million acres",
+        "YearType": "Market year",
+        "Year": "2019/20",
+        "Value": 13.5
+    },
+    {
+        "Attribute": "Planted acres",
+        "Commodity": "Oats",
+        "CommodityType": "Crops",
+        "Units": "Million acres",
+        "YearType": "Market year",
+        "Year": "2019/20",
+        "Value": 2.8
+    },
+    {
+        "Attribute": "Planted acres",
+        "Commodity": "Oats",
+        "CommodityType": "Crops",
+        "Units": "Million acres",
+        "YearType": "Market year",
+        "Year": "2020/21",
+        "Value": 3
+    },
+    {
+        "Attribute": "Planted acres",
+        "Commodity": "Oats",
+        "CommodityType": "Crops",
+        "Units": "Million acres",
+        "YearType": "Market year",
+        "Year": "2021/22",
+        "Value": 2.9
+    },
+    {
+        "Attribute": "Planted acres",
+        "Commodity": "Sorghum",
+        "CommodityType": "Crops",
+        "Units": "Million acres",
+        "YearType": "Market year",
+        "Year": "2019/20",
+        "Value": 5.3
+    },
+    {
+        "Attribute": "Planted acres",
+        "Commodity": "Sorghum",
+        "CommodityType": "Crops",
+        "Units": "Million acres",
+        "YearType": "Market year",
+        "Year": "2020/21",
+        "Value": 5.8
+    },
+    {
+        "Attribute": "Planted acres",
+        "Commodity": "Soybeans",
+        "CommodityType": "Crops",
+        "Units": "Million acres",
+        "YearType": "Market year",
+        "Year": "2019/20",
+        "Value": 76.1
+    },
+    {
+        "Attribute": "Planted acres",
+        "Commodity": "Soybeans",
+        "CommodityType": "Crops",
+        "Units": "Million acres",
+        "YearType": "Market year",
+        "Year": "2020/21",
+        "Value": 83.1
+    },
+    {
+        "Attribute": "Planted acres",
+        "Commodity": "Wheat",
+        "CommodityType": "Crops",
+        "Units": "Million acres",
+        "YearType": "Market year",
+        "Year": "2019/20",
+        "Value": 45.5
+    },
+    {
+        "Attribute": "Planted acres",
+        "Commodity": "Wheat",
+        "CommodityType": "Crops",
+        "Units": "Million acres",
+        "YearType": "Market year",
+        "Year": "2020/21",
+        "Value": 44.3
+    },
+    {
+        "Attribute": "Per capita disappearance",
+        "Commodity": "Egg",
+        "CommodityType": "Livestock/Dairy",
+        "Units": "Number per capita",
+        "YearType": "Calendar year",
+        "Year": "2019",
+        "Value": 293.6
+    },
+    {
+        "Attribute": "Per capita disappearance",
+        "Commodity": "Egg",
+        "CommodityType": "Livestock/Dairy",
+        "Units": "Number per capita",
+        "YearType": "Calendar year",
+        "Year": "2020",
+        "Value": 285
+    },
+    {
+        "Attribute": "Beef",
+        "Commodity": "Per capita meat consumption, retail weight",
+        "CommodityType": "Livestock/Dairy",
+        "Units": "Pounds per capita",
+        "YearType": "Calendar year",
+        "Year": "2019",
+        "Value": 58.1
+    },
+    {
+        "Attribute": "Beef",
+        "Commodity": "Per capita meat consumption, retail weight",
+        "CommodityType": "Livestock/Dairy",
+        "Units": "Pounds per capita",
+        "YearType": "Calendar year",
+        "Year": "2020",
+        "Value": 58.8
+    },
+    {
+        "Attribute": "Broilers",
+        "Commodity": "Per capita meat consumption, retail weight",
+        "CommodityType": "Livestock/Dairy",
+        "Units": "Pounds per capita",
+        "YearType": "Calendar year",
+        "Year": "2019",
+        "Value": 95.1
+    },
+    {
+        "Attribute": "Broilers",
+        "Commodity": "Per capita meat consumption, retail weight",
+        "CommodityType": "Livestock/Dairy",
+        "Units": "Pounds per capita",
+        "YearType": "Calendar year",
+        "Year": "2020",
+        "Value": 96.5
+    },
+    {
+        "Attribute": "Pork",
+        "Commodity": "Per capita meat consumption, retail weight",
+        "CommodityType": "Livestock/Dairy",
+        "Units": "Pounds per capita",
+        "YearType": "Calendar year",
+        "Year": "2019",
+        "Value": 51.5
+    },
+    {
+        "Attribute": "Pork",
+        "Commodity": "Per capita meat consumption, retail weight",
+        "CommodityType": "Livestock/Dairy",
+        "Units": "Pounds per capita",
+        "YearType": "Calendar year",
+        "Year": "2020",
+        "Value": 50.3
+    },
+    {
+        "Attribute": "Milk",
+        "Commodity": "Per capita consumption, retail weight",
+        "CommodityType": "Livestock/Dairy",
+        "Units": "Pounds per capita",
+        "YearType": "Calendar year",
+        "Year": "2019",
+        "Value": 646.2
+    },
+    {
+        "Attribute": "Milk",
+        "Commodity": "Per capita consumption, retail weight",
+        "CommodityType": "Livestock/Dairy",
+        "Units": "Pounds per capita",
+        "YearType": "Calendar year",
+        "Year": "2020",
+        "Value": 639.7
+    }
+]

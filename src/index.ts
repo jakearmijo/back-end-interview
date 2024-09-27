@@ -10,16 +10,16 @@ import unitsRouter from "./routes/units.routes";
 import yearTypeRouter from "./routes/yearType.routes";
 import yearRouter from "./routes/year.routes";
 import openApiRouter from "./routes/openApi.routes";
-import { createClient } from 'redis';
+import { createClient } from "redis";
+import dotenv from "dotenv";
+dotenv.config();
 
-const client = createClient({
-    password: process.env.REDIS_PASSWORD,
-    socket: {
-        host: process.env.REDIS_HOST,
-        port: 12634
-    }
+export const redisClient = createClient({
+  password: process.env.REDIS_PASSWORD,
+  socket: { host: process.env.REDIS_HOST, port: 12634 },
 });
-const logger = pino({
+
+export const logger = pino({
   transport: {
     target: "pino-pretty",
     options: {
@@ -30,7 +30,7 @@ const logger = pino({
   },
 });
 
-const app = express();
+export const app = express();
 const port = 3000;
 
 app.use(requestLogger);
@@ -57,4 +57,12 @@ app.listen(port, () => {
   );
 });
 
-export { logger };
+(async () => {
+  try {
+    await redisClient.connect();
+    redisClient.on("error", (err) => console.log("Redis Client Error", err));
+    logger.info("💾 💾 Redis Connect successfully");
+  } catch (error: any) {
+    logger.info(`🔴 Unable to connect to Redis: ${error}`);
+  }
+})();

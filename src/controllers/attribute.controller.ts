@@ -1,20 +1,33 @@
 import { Request, Response } from "express";
 import { convertCsvToJson, countCommodities } from "../common/utils/csvUtils";
+import {
+  AttributeHistogramResponse,
+  AttributeResponseSchema,
+} from "../schemas/attribute.schema";
+import { redisClient } from "..";
 
 export const getAttributeHistogram = async (
   req: Request,
   res: Response
-): Promise<void> => {
+): Promise<any> => {
   try {
-    const filePath = "Projection2021.csv";
+    const redisKey = "Projection2021:Attribute";
+    const cachedData = await redisClient.get(redisKey);
+    if (cachedData) {
+      const cachedResult: AttributeHistogramResponse = JSON.parse(cachedData);
+      return res.status(200).json(cachedResult);
+    }
+    const filePath = "TestProjection2021.csv";
     const jsonData = await convertCsvToJson(filePath);
-    
-
     const result = countCommodities(jsonData, "Attribute");
+    AttributeResponseSchema.parse(result);
+    await redisClient.set(redisKey, JSON.stringify(result), {
+      EX: 3600,
+    });
 
-    res.status(200).json(result);
+    return res.status(200).json(result);
   } catch (error) {
     console.error("Error fetching data:", error);
-    res.status(500).json({ message: "Failed to fetch data." });
+    return res.status(500).json({ message: "Failed to fetch data." });
   }
 };

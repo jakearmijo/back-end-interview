@@ -1,0 +1,168 @@
+Attribute,Commodity,CommodityType,Units,YearType,Year,Value
+Harvested acres,Rice,Crops,Thousand acres,Market year,2019/20,2472
+Planted acres,Rice,Crops,Thousand acres,Market year,2019/20,2540
+Harvested acres,Corn,Crops,Million acres,Market year,2030/31,81.5
+Harvested acres,Upland Cotton,Crops,Million acres,Market year,2019/20,11.4
+Harvested acres,Oats,Crops,Million acres,Market year,2019/20,0.8
+Harvested acres,Sorghum,Crops,Million acres,Market year,2019/20,4.7
+Harvested acres,Sorghum,Crops,Million acres,Market year,2020/21,5
+Harvested acres,Wheat,Crops,Million acres,Market year,2019/20,37.4
+Harvested acres,Wheat,Crops,Million acres,Market year,2020/21,36.7
+Harvested acres,Wheat,Crops,Million acres,Market year,2021/22,38.5
+Planted acres,Barley,Crops,Million acres,Market year,2019/20,2.8
+Planted acres,Barley,Crops,Million acres,Market year,2020/21,2.6
+Planted acres,Corn,Crops,Million acres,Market year,2019/20,89.7
+Planted acres,Corn,Crops,Million acres,Market year,2020/21,91
+Planted acres,Corn,Crops,Million acres,Market year,2021/22,90
+Planted acres,Upland Cotton,Crops,Million acres,Market year,2019/20,13.5
+Planted acres,Oats,Crops,Million acres,Market year,2019/20,2.8
+Planted acres,Oats,Crops,Million acres,Market year,2020/21,3
+Planted acres,Oats,Crops,Million acres,Market year,2021/22,2.9
+Planted acres,Sorghum,Crops,Million acres,Market year,2019/20,5.3
+Planted acres,Sorghum,Crops,Million acres,Market year,2020/21,5.8
+Planted acres,Soybeans,Crops,Million acres,Market year,2019/20,76.1
+Planted acres,Soybeans,Crops,Million acres,Market year,2020/21,83.1
+Planted acres,Wheat,Crops,Million acres,Market year,2019/20,45.5
+Planted acres,Wheat,Crops,Million acres,Market year,2020/21,44.3
+Per capita disappearance,Egg,Livestock/Dairy,Number per capita,Calendar year,2019,293.6
+Per capita disappearance,Egg,Livestock/Dairy,Number per capita,Calendar year,2020,285
+Beef,"Per capita meat consumption, retail weight",Livestock/Dairy,Pounds per capita,Calendar year,2019,58.1
+Beef,"Per capita meat consumption, retail weight",Livestock/Dairy,Pounds per capita,Calendar year,2020,58.8
+Broilers,"Per capita meat consumption, retail weight",Livestock/Dairy,Pounds per capita,Calendar year,2019,95.1
+Broilers,"Per capita meat consumption, retail weight",Livestock/Dairy,Pounds per capita,Calendar year,2020,96.4
+Lamb & mutton,"Per capita meat consumption, retail weight",Livestock/Dairy,Pounds per capita,Calendar year,2019,1.1
+Lamb & mutton,"Per capita meat consumption, retail weight",Livestock/Dairy,Pounds per capita,Calendar year,2020,1.1
+Total red meat,"Per capita meat consumption, retail weight",Livestock/Dairy,Pounds per capita,Calendar year,2019,111.9
+Total red meat,"Per capita meat consumption, retail weight",Livestock/Dairy,Pounds per capita,Calendar year,2020,111.4
+Other chicken,"Per capita meat consumption, retail weight",Livestock/Dairy,Pounds per capita,Calendar year,2019,1.4
+Other chicken,"Per capita meat consumption, retail weight",Livestock/Dairy,Pounds per capita,Calendar year,2020,1.4
+Pork,"Per capita meat consumption, retail weight",Livestock/Dairy,Pounds per capita,Calendar year,2019,52.4
+Pork,"Per capita meat consumption, retail weight",Livestock/Dairy,Pounds per capita,Calendar year,2020,51.3
+Pork,"Per capita meat consumption, retail weight",Livestock/Dairy,Pounds per capita,Calendar year,2021,51.6
+Turkeys,"Per capita meat consumption, retail weight",Livestock/Dairy,Pounds per capita,Calendar year,2019,16
+Turkeys,"Per capita meat consumption, retail weight",Livestock/Dairy,Pounds per capita,Calendar year,2020,15.8
+Turkeys,"Per capita meat consumption, retail weight",Livestock/Dairy,Pounds per capita,Calendar year,2030,15
+Veal,"Per capita meat consumption, retail weight",Livestock/Dairy,Pounds per capita,Calendar year,2019,0.2
+Veal,"Per capita meat consumption, retail weight",Livestock/Dairy,Pounds per capita,Calendar year,2020,0.2
+Total poultry,"Per capita meat consumption, retail weight",Livestock/Dairy,Pounds per capita,Calendar year,2019,112.5
+Total poultry,"Per capita meat consumption, retail weight",Livestock/Dairy,Pounds per capita,Calendar year,2020,113.7
+Red meat & poultry,"Per capita meat consumption, retail weight",Livestock/Dairy,Pounds per capita,Calendar year,2019,224.4
+Red meat & poultry,"Per capita meat consumption, retail weight",Livestock/Dairy,Pounds per capita,Calendar year,2020,225
+Beginning stocks,Barley,Crops,Million bushels,Market year,2019/20,87
+Beginning stocks,Barley,Crops,Million bushels,Market year,2020/21,80
+Beginning stocks,Corn,Crops,Million bushels,Market year,2019/20,2221
+Beginning stocks,Corn,Crops,Million bushels,Market year,2020/21,1995
+Beginning stocks,Corn,Crops,Million bushels,Market year,2021/22,2167
+Beginning stocks,Sorghum,Crops,Million bushels,Market year,2019/20,64
+Beginning stocks,Sorghum,Crops,Million bushels,Market year,2020/21,29
+Beginning stocks,Soybeans,Crops,Million bushels,Market year,2019/20,909
+Beginning stocks,Soybeans,Crops,Million bushels,Market year,2020/21,523
+Beginning stocks,Wheat,Crops,Million bushels,Market year,2019/20,1080
+Beginning stocks,Wheat,Crops,Million bushels,Market year,2020/21,1028
+Ending stocks,Barley,Crops,Million bushels,Market year,2019/20,80
+Ending stocks,Barley,Crops,Million bushels,Market year,2020/21,79
+Ending stocks,Corn,Crops,Million bushels,Market year,2019/20,1995
+Ending stocks,Corn,Crops,Million bushels,Market year,2020/21,2167
+Ending stocks,Oats,Crops,Million bushels,Market year,2019/20,37
+Ending stocks,Oats,Crops,Million bushels,Market year,2020/21,40
+Ending stocks,Sorghum,Crops,Million bushels,Market year,2019/20,29
+Ending stocks,Sorghum,Crops,Million bushels,Market year,2020/21,30
+Ending Stocks,Soybeans,Crops,Million bushels,Market year,2019/20,523
+Ending Stocks,Soybeans,Crops,Million bushels,Market year,2020/21,290
+Ending stocks,Wheat,Crops,Million bushels,Market year,2019/20,1028
+Ending stocks,Wheat,Crops,Million bushels,Market year,2028/29,701
+Ending stocks,Wheat,Crops,Million bushels,Market year,2030/31,720
+Imports,Barley,Crops,Million bushels,Market year,2019/20,7
+Imports,Barley,Crops,Million bushels,Market year,2020/21,7
+Imports,Barley,Crops,Million bushels,Market year,2021/22,10
+Imports,Barley,Crops,Million bushels,Market year,2022/23,10
+Imports,Barley,Crops,Million bushels,Market year,2023/24,10
+Imports,Barley,Crops,Million bushels,Market year,2024/25,10
+Imports,Barley,Crops,Million bushels,Market year,2025/26,10
+Imports,Barley,Crops,Million bushels,Market year,2026/27,10
+Imports,Barley,Crops,Million bushels,Market year,2027/28,10
+Imports,Barley,Crops,Million bushels,Market year,2028/29,10
+Imports,Barley,Crops,Million bushels,Market year,2029/30,10
+Imports,Barley,Crops,Million bushels,Market year,2030/31,10
+Imports,Corn,Crops,Million bushels,Market year,2019/20,42
+Imports,Corn,Crops,Million bushels,Market year,2020/21,25
+Imports,Corn,Crops,Million bushels,Market year,2021/22,25
+Imports,Corn,Crops,Million bushels,Market year,2022/23,25
+Imports,Corn,Crops,Million bushels,Market year,2023/24,25
+Imports,Corn,Crops,Million bushels,Market year,2024/25,25
+Imports,Corn,Crops,Million bushels,Market year,2025/26,25
+Imports,Corn,Crops,Million bushels,Market year,2026/27,25
+Imports,Corn,Crops,Million bushels,Market year,2027/28,25
+Imports,Corn,Crops,Million bushels,Market year,2028/29,25
+Imports,Corn,Crops,Million bushels,Market year,2029/30,25
+Imports,Corn,Crops,Million bushels,Market year,2030/31,25
+Imports,Oats,Crops,Million bushels,Market year,2019/20,92
+Imports,Oats,Crops,Million bushels,Market year,2020/21,94
+Imports,Oats,Crops,Million bushels,Market year,2021/22,95
+Imports,Oats,Crops,Million bushels,Market year,2022/23,95
+Imports,Oats,Crops,Million bushels,Market year,2023/24,95
+Imports,Oats,Crops,Million bushels,Market year,2024/25,95
+Imports,Oats,Crops,Million bushels,Market year,2025/26,95
+Imports,Oats,Crops,Million bushels,Market year,2026/27,95
+Imports,Oats,Crops,Million bushels,Market year,2027/28,95
+Imports,Oats,Crops,Million bushels,Market year,2028/29,95
+Imports,Oats,Crops,Million bushels,Market year,2029/30,95
+Imports,Oats,Crops,Million bushels,Market year,2030/31,95
+Imports,Sorghum,Crops,Million bushels,Market year,2019/20,0
+Imports,Sorghum,Crops,Million bushels,Market year,2030/31,0
+Imports,Soybeans,Crops,Million bushels,Market year,2019/20,15
+Imports,Soybeans,Crops,Million bushels,Market year,2020/21,
+Imports,Wheat,Crops,Million bushels,Market year,2019/20,105
+Imports,Wheat,Crops,Million bushels,Market year,2030/31,130
+Production,Barley,Crops,Million bushels,Market year,2019/20,172
+Production,Barley,Crops,Million bushels,Market year,2020/21,165
+Production,Barley,Crops,Million bushels,Market year,2030/31,183
+Production,Corn,Crops,Million bushels,Market year,2019/20,13620
+Production,Corn,Crops,Million bushels,Market year,2029/30,16015
+Production,Corn,Crops,Million bushels,Market year,2030/31,16180
+Production,Oats,Crops,Million bushels,Market year,2019/20,53
+Production,Oats,Crops,Million bushels,Market year,2029/30,69
+Production,Oats,Crops,Million bushels,Market year,2030/31,69
+Production,Sorghum,Crops,Million bushels,Market year,2019/20,341
+Production,Sorghum,Crops,Million bushels,Market year,2020/21,371
+Production,Sorghum,Crops,Million bushels,Market year,2021/22,427
+Production,Soybeans,Crops,Million bushels,Market year,2019/20,3552
+Production,Soybeans,Crops,Million bushels,Market year,2020/21,4268
+Production,Soybeans,Crops,Million bushels,Market year,2021/22,4465
+Production,Soybeans,Crops,Million bushels,Market year,2030/31,4955
+Production,Wheat,Crops,Million bushels,Market year,2019/20,1932
+Production,Wheat,Crops,Million bushels,Market year,2020/21,1826
+Production,Wheat,Crops,Million bushels,Market year,2021/22,1890
+Production,Wheat,Crops,Million bushels,Market year,2029/30,1955
+Production,Wheat,Crops,Million bushels,Market year,2030/31,1969
+Total supply,Barley,Crops,Million bushels,Market year,2019/20,266
+Total supply,Barley,Crops,Million bushels,Market year,2020/21,253
+Total supply,Barley,Crops,Million bushels,Market year,2021/22,258
+Total supply,Barley,Crops,Million bushels,Market year,2030/31,279
+Total supply,Corn,Crops,Million bushels,Market year,2019/20,15883
+Total supply,Corn,Crops,Million bushels,Market year,2020/21,16742
+Total supply,Corn,Crops,Million bushels,Market year,2030/31,19052
+Total supply,Oats,Crops,Million bushels,Market year,2019/20,183
+Total supply,Oats,Crops,Million bushels,Market year,2020/21,196
+Total supply,Oats,Crops,Million bushels,Market year,2030/31,202
+Total supply,Sorghum,Crops,Million bushels,Market year,2019/20,405
+Total supply,Sorghum,Crops,Million bushels,Market year,2020/21,400
+Total supply,Sorghum,Crops,Million bushels,Market year,2021/22,457
+Total supply,Sorghum,Crops,Million bushels,Market year,2029/30,463
+Total supply,Sorghum,Crops,Million bushels,Market year,2030/31,460
+Total supply,Soybeans,Crops,Million bushels,Market year,2019/20,4476
+Total supply,Soybeans,Crops,Million bushels,Market year,2020/21,
+Total supply,Soybeans,Crops,Million bushels,Market year,2030/31,5261
+Total supply,Wheat,Crops,Million bushels,Market year,2019/20
+Total supply,Wheat,Crops,Million bushels,Market year,2030/31,2808
+Domestic use,Barley,Crops,Million bushels,Market year,2019/20,180
+Domestic use,Barley,Crops,Million bushels,Market year,2020/21,168
+Domestic use,Barley,Crops,Million bushels,Market year,2025/26,183
+Yield (bushel/harvested acre),Sorghum,Crops,Bushels per acre,Market year,2019/20,73
+Yield (bushel/harvested acre),Sorghum,Crops,Bushels per acre,Market year,2021/22,69
+Yield (bushel/harvested acre),Soybeans,Crops,Bushels per acre,Market year,2019/20,47.4
+Yield (bushel/harvested acre),Soybeans,Crops,Bushels per acre,Market year,2020/21,51.9
+Yield (bushel/harvested acre),Wheat,Crops,Bushels per acre,Market year,2019/20,51.7
+Yield (pounds/harvested acre),Upland Cotton,Crops,Pounds per acre,Market year,2019/20,810
+Yield (pounds/harvested acre),Rice,Crops,Pounds per acre,Market year,2019/20,7471
+Yield (pounds/harvested acre),Rice,Crops,Pounds per acre,Market year,2030/31,7917

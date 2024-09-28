@@ -18,7 +18,7 @@ export const getCommodityTypeHistogram = async (
         JSON.parse(cachedData);
       return res.status(200).json(cachedResult);
     }
-    const filePath = "Projection2021.csv";
+    const filePath = process.env.NODE_ENV === 'test' ? "TestProjection2021.csv" : "Projection2021.csv";
     const jsonData = await convertCsvToJson(filePath);
     const result = countCommodities(jsonData, "CommodityType");
     CommodityTypeHistogramResponseSchema.parse(result);

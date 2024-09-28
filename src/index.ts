@@ -50,19 +50,21 @@ app.use("/docs", openApiRouter);
 app.get("/", (req: Request, res: Response) => {
   res.send("Hello, 🌿 Nutrien AG Solutions!");
 });
+if (process.env.NODE_ENV !== "test") {
+  const port = process.env.PORT || 3000;
+  app.listen(port, () => {
+    logger.info(
+      `🚜 🚜 🚜 Hello, 🌿 Nutrien AG Solutions from http://localhost:${port}`
+    );
+  });
 
-app.listen(port, () => {
-  logger.info(
-    `🚜 🚜 🚜 Hello, 🌿 Nutrien AG Solutions from http://localhost:${port}`
-  );
-});
-
-(async () => {
-  try {
-    await redisClient.connect();
-    redisClient.on("error", (err) => console.log("Redis Client Error", err));
-    logger.info("💾 💾 Redis Connect successfully");
-  } catch (error: any) {
-    logger.info(`🔴 Unable to connect to Redis: ${error}`);
-  }
-})();
+  (async () => {
+    try {
+      await redisClient.connect();
+      redisClient.on("error", (err) => console.log("Redis Client Error", err));
+      logger.info("💾 💾 Redis Connect successfully");
+    } catch (error: any) {
+      logger.info(`🔴 Unable to connect to Redis: ${error}`);
+    }
+  })();
+}

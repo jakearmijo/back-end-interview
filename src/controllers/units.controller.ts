@@ -14,7 +14,7 @@ export const getUnitsHistogram = async (
       const cachedResult: UnitsResponse = JSON.parse(cachedData);
       return res.status(200).json(cachedResult);
     }
-    const filePath = "Projection2021.csv";
+    const filePath = process.env.NODE_ENV === 'test' ? "TestProjection2021.csv" : "Projection2021.csv";
     const jsonData = await convertCsvToJson(filePath);
     const result = countCommodities(jsonData, "Units");
     UnitsResponseSchema.parse(result);

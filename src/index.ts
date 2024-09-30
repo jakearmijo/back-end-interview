@@ -56,7 +56,7 @@ if (process.env.NODE_ENV !== "test") {
   const port = process.env.PORT || 3000;
   app.listen(port, () => {
     logger.info(
-      `🚜 🚜 🚜 Hello, 🌿 Nutrien AG Solutions from http://localhost:${port}`
+      `🚜 🚜 🚜 Hello, 🌿 Nutrien AG Solutions from http://localhost:${port}/${apiVersion}/`
     );
   });
 

@@ -88,7 +88,6 @@ You can access the API at http://localhost:3000/v1/.
   
 #### Contracts & API Documentation
 - navigating to ```http://localhost:3000/v1/docs``` - will bring you to the OpenApi documentation.
-- built with 
 
 #### Testing
 To run tests, use:

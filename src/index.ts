@@ -3,6 +3,7 @@ import cors from "cors";
 import helmet from "helmet";
 import pino from "pino";
 import requestLogger from "./common/middleware/requestLogger";
+import rateLimiter from "./common/middleware/rateLimiter";
 import attributeRouter from "./routes/attribute.routes";
 import commodityRouter from "./routes/commodity.routes";
 import commodityTypeRouter from "./routes/commodityType.routes";
@@ -10,7 +11,7 @@ import unitsRouter from "./routes/units.routes";
 import yearTypeRouter from "./routes/yearType.routes";
 import yearRouter from "./routes/year.routes";
 import openApiRouter from "./routes/openApi.routes";
-import { createClient } from "redis";
+// import { createClient } from "redis";
 import dotenv from "dotenv";
 dotenv.config();
 
@@ -34,6 +35,7 @@ export const app = express();
 const port = 3000;
 
 app.use(requestLogger);
+app.use(rateLimiter);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());

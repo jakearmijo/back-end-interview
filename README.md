@@ -64,15 +64,27 @@ Be prepared to talk about one aspect of this exercise you found interesting, or 
   - [x] Units
   - [x] YearType
   - [x] Year
-- [ ] Testing
+- [x] Testing strategies - API ROUTES
   - [x] Attribute
+    - [x] 200
+    - [x] 404
   - [x] Commodity
+    - [x] 200
+    - [x] 404
   - [x] CommodityType
+    - [x] 200
+    - [x] 404
   - [x] Units
+    - [x] 200
+    - [x] 404
   - [x] YearType
+    - [x] 200
+    - [x] 404
   - [x] Year
+    - [x] 200
+    - [x] 404
+- [ ] Testing strategies - API ROUTES
 - [ ] Visualizations
-- [ ] Testing strategies
 - [ ] Persisting data
 - [ ] Data modeling / analytics
   - [ ] Zod Schemas per models

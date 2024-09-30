@@ -11,16 +11,16 @@ interface DataRow {
  * @param attribute The name of the attribute to count.
  * @returns A record with commodity names as keys and their counts as values.
  */
-export function countCommodities(data: DataRow[], attribute: string): Record<string, number> {
+export function countCommodities(
+  data: DataRow[],
+  attribute: string
+): Record<string, number> {
   const commodityCount: Record<string, number> = {};
 
   data.forEach((row) => {
     const element = row[attribute] as string;
-    
-    if (commodityCount[element]) {
-      commodityCount[element]++;
-    } else {
-      commodityCount[element] = 1;
+    if (element) {
+      commodityCount[element] = (commodityCount[element] || 0) + 1;
     }
   });
 
@@ -42,7 +42,7 @@ export async function convertCsvToJson(filePath: string): Promise<DataRow[]> {
       .on("end", () => {
         resolve(results);
       })
-      .on("error", (error: any) => {
+      .on("error", (error) => {
         reject(error);
       });
   });

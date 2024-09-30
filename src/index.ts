@@ -32,7 +32,7 @@ export const logger = pino({
 });
 
 export const app = express();
-const port = 3000;
+const apiVersion = "v1";
 
 app.use(requestLogger);
 app.use(rateLimiter);
@@ -41,15 +41,15 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use(helmet());
 
-app.use("/attribute", attributeRouter);
-app.use("/commodity", commodityRouter);
-app.use("/commodityType", commodityTypeRouter);
-app.use("/units", unitsRouter);
-app.use("/yearType", yearTypeRouter);
-app.use("/year", yearRouter);
-app.use("/docs", openApiRouter);
+app.use(`/${apiVersion}/attribute`, attributeRouter);
+app.use(`/${apiVersion}/commodity`, commodityRouter);
+app.use(`/${apiVersion}/commodityType`, commodityTypeRouter);
+app.use(`/${apiVersion}/units`, unitsRouter);
+app.use(`/${apiVersion}/yearType`, yearTypeRouter);
+app.use(`/${apiVersion}/year`, yearRouter);
+app.use(`/${apiVersion}/docs`, openApiRouter);
 
-app.get("/", (req: Request, res: Response) => {
+app.get(`/${apiVersion}/`, (req: Request, res: Response) => {
   res.send("Hello, 🌿 Nutrien AG Solutions!");
 });
 if (process.env.NODE_ENV !== "test") {

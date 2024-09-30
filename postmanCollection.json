@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "1c3e59e5-4aec-443f-9968-368db11aaa0c",
+		"name": "Jake Armijo Interview",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11228426"
+	},
+	"item": [
+		{
+			"name": "Commodity Histogram",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/{{API_VERSION}}/commodity/histogram",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"{{API_VERSION}}",
+						"commodity",
+						"histogram"
+					]
+				},
+				"description": "### Get Commodity Histogram\n\nThis endpoint retrieves a histogram of commodity data.\n\n**Request Body**  \nThis is a GET request and does not require a request body.\n\n**Response**\n\n- Status: 200 OK\n    \n- Content-Type: application/json\n    \n\nExample Response Body:\n\n``` json\n{\n    \"Rice\": 0,\n    \"Barley\": 0,\n    \"Corn\": 0,\n    \"Upland Cotton\": 0,\n    \"Oats\": 0,\n    \"Sorghum\": 0,\n    \"Soybeans\": 0,\n    \"Wheat\": 0,\n    \"Egg\": 0,\n    \"Per capita meat consumption, retail weight\": 0,\n    \"Beef\": 0,\n    \"Pork\": 0,\n    \"Dairy\": 0,\n    \"Chicken\": 0,\n    \"Turkey\": 0,\n    \"Soybean oil\": 0,\n    \"Soybean meal\": 0\n}\n\n ```"
+			},
+			"response": []
+		},
+		{
+			"name": "Commodity Type Histogram",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/{{API_VERSION}}/commodityType/histogram",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"{{API_VERSION}}",
+						"commodityType",
+						"histogram"
+					]
+				},
+				"description": "### Get Commodity Histogram\n\nThis endpoint retrieves a histogram of commodity data.\n\n**Request Body**  \nThis is a GET request and does not require a request body.\n\n**Response**\n\n- Status: 200 OK\n    \n- Content-Type: application/json\n    \n\nExample Response Body:\n\n``` json\n{\n    \"Rice\": 0,\n    \"Barley\": 0,\n    \"Corn\": 0,\n    \"Upland Cotton\": 0,\n    \"Oats\": 0,\n    \"Sorghum\": 0,\n    \"Soybeans\": 0,\n    \"Wheat\": 0,\n    \"Egg\": 0,\n    \"Per capita meat consumption, retail weight\": 0,\n    \"Beef\": 0,\n    \"Pork\": 0,\n    \"Dairy\": 0,\n    \"Chicken\": 0,\n    \"Turkey\": 0,\n    \"Soybean oil\": 0,\n    \"Soybean meal\": 0\n}\n\n ```"
+			},
+			"response": []
+		},
+		{
+			"name": "Attribute Histogram",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/{{API_VERSION}}/attribute/histogram",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"{{API_VERSION}}",
+						"attribute",
+						"histogram"
+					]
+				},
+				"description": "### Get Attribute Histogram\n\nThis endpoint makes an HTTP GET request to retrieve a histogram of attribute data related to commodity information.\n\n**Request**\n\nThis is a GET request and does not require a request body.\n\n**Response**\n\n- Status: 200 OK\n    \n- Content-Type: application/json\n    \n\nExample Response Body:\n\n``` json\n{\n    \"Harvested acres\": 0,\n    \"Planted acres\": 0,\n    \"Per capita disappearance\": 0,\n    \"Beef\": 0,\n    \"Broilers\": 0,\n    \"Lamb & mutton\": 0,\n    \"Total red meat\": 0,\n    \"Other chicken\": 0,\n    \"Pork\": 0,\n    \"Turkeys\": 0,\n    \"Veal\": 0,\n    \"Total poultry\": 0,\n    \"Red meat & poultry\": 0,\n    \"Beginning stocks\": 0,\n    \"Ending stocks\": 0,\n    \"Imports\": 0,\n    \"Production\": 0,\n    \"Total supply\": 0,\n    \"Domestic use\": 0,\n    \"Ethanol and by-products\": 0,\n    \"Food, seed, & industrial\": 0,\n    \"Food\": 0,\n    \"Feed & residual\": 0,\n    \"Crush\": 0,\n    \"Seed\": 0,\n    \"Seed and residual\": 0,\n    \"Total use\": 0,\n    \"Exports\": 0,\n    \"Beef cow inventory\": 0,\n    \"Cattle inventory\": 0,\n    \"Total cow inventory\": 0,\n    \"Hog inventory Dec. 1, previous year\": 0,\n    \"Number of cows\": 0,\n    \"Disappearance\": 0,\n    \"Hatching use\": 0,\n    \"Net returns\": 0,\n    \"Loan rate\": 0,\n    \"Crush margin (dollar/bushel)\": 0,\n    \"Farm price\": 0,\n    \"National composite price\": 0,\n    \"Broilers, farm price\": 0,\n    \"Turkey, farm price\": 0,\n    \"Hen turkeys, National price\": 0,\n    \"Stocks/use ratio, percent\": 0,\n    \"Soybean oil price (dollar/pound)\": 0,\n    \"Soybean meal price (dollar/ton)\": 0,\n    \"All milk price\": 0,\n    \"Steers, 5-area price\": 0,\n    \"Beef cattle, farm price\": 0,\n    \"Calves, farm price\": 0,\n    \"Hogs, farm price\": 0,\n    \"National base, live equivalent price\": 0,\n    \"Feeder steers, Oklahoma City price\": 0,\n    \"Eggs, farm price\": 0,\n    \"New York, Grade A large price\": 0,\n    \"Crushing yields, soybean meal\": 0,\n    \"Crushing yields, soybean oil\": 0,\n    \"Variable cost of production (per acre)\": 0,\n    \"Variable cost of production (per bushel)\": 0,\n    \"Variable cost of production (per pound)\": 0,\n    \"Variable cost of production (per hundredweight)\": 0,\n    \"Milling rate, percent\": 0,\n    \"Domestic use & residual\": 0,\n    \"Milk per cow\": 0,\n    \"Milk production\": 0,\n    \"Commercial use: Milkfat basis\": 0,\n    \"Commercial use: Skim solids\": 0,\n    \"Federally inspected slaughter\": 0,\n    \"Commercial production\": 0,\n    \"Farm production\": 0,\n    \"Total production\": 0,\n    \"Total disappearance\": 0,\n    \"Soybean oil, for methyl ester\": 0,\n    \"Yield (bushel/harvested acre)\": 0,\n    \"Yield (pounds/harvested acre)\": 0\n}\n\n ```"
+			},
+			"response": []
+		},
+		{
+			"name": "Units Histogram",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/{{API_VERSION}}/units/histogram",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"{{API_VERSION}}",
+						"units",
+						"histogram"
+					]
+				},
+				"description": "### Get Commodity Histogram\n\nThis endpoint retrieves a histogram of commodity data.\n\n**Request Body**  \nThis is a GET request and does not require a request body.\n\n**Response**\n\n- Status: 200 OK\n    \n- Content-Type: application/json\n    \n\nExample Response Body:\n\n``` json\n{\n    \"Rice\": 0,\n    \"Barley\": 0,\n    \"Corn\": 0,\n    \"Upland Cotton\": 0,\n    \"Oats\": 0,\n    \"Sorghum\": 0,\n    \"Soybeans\": 0,\n    \"Wheat\": 0,\n    \"Egg\": 0,\n    \"Per capita meat consumption, retail weight\": 0,\n    \"Beef\": 0,\n    \"Pork\": 0,\n    \"Dairy\": 0,\n    \"Chicken\": 0,\n    \"Turkey\": 0,\n    \"Soybean oil\": 0,\n    \"Soybean meal\": 0\n}\n\n ```"
+			},
+			"response": []
+		},
+		{
+			"name": "Year Histogram",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/{{API_VERSION}}/year/histogram",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"{{API_VERSION}}",
+						"year",
+						"histogram"
+					]
+				},
+				"description": "### Get Commodity Histogram\n\nThis endpoint retrieves a histogram of commodity data.\n\n**Request Body**  \nThis is a GET request and does not require a request body.\n\n**Response**\n\n- Status: 200 OK\n    \n- Content-Type: application/json\n    \n\nExample Response Body:\n\n``` json\n{\n    \"Rice\": 0,\n    \"Barley\": 0,\n    \"Corn\": 0,\n    \"Upland Cotton\": 0,\n    \"Oats\": 0,\n    \"Sorghum\": 0,\n    \"Soybeans\": 0,\n    \"Wheat\": 0,\n    \"Egg\": 0,\n    \"Per capita meat consumption, retail weight\": 0,\n    \"Beef\": 0,\n    \"Pork\": 0,\n    \"Dairy\": 0,\n    \"Chicken\": 0,\n    \"Turkey\": 0,\n    \"Soybean oil\": 0,\n    \"Soybean meal\": 0\n}\n\n ```"
+			},
+			"response": []
+		},
+		{
+			"name": "Year Type Histogram",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/{{API_VERSION}}/yearType/histogram",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"{{API_VERSION}}",
+						"yearType",
+						"histogram"
+					]
+				},
+				"description": "### Get Commodity Histogram\n\nThis endpoint retrieves a histogram of commodity data.\n\n**Request Body**  \nThis is a GET request and does not require a request body.\n\n**Response**\n\n- Status: 200 OK\n    \n- Content-Type: application/json\n    \n\nExample Response Body:\n\n``` json\n{\n    \"Rice\": 0,\n    \"Barley\": 0,\n    \"Corn\": 0,\n    \"Upland Cotton\": 0,\n    \"Oats\": 0,\n    \"Sorghum\": 0,\n    \"Soybeans\": 0,\n    \"Wheat\": 0,\n    \"Egg\": 0,\n    \"Per capita meat consumption, retail weight\": 0,\n    \"Beef\": 0,\n    \"Pork\": 0,\n    \"Dairy\": 0,\n    \"Chicken\": 0,\n    \"Turkey\": 0,\n    \"Soybean oil\": 0,\n    \"Soybean meal\": 0\n}\n\n ```"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "http://localhost:3000",
+			"type": "string"
+		},
+		{
+			"key": "API_VERSION",
+			"value": "v1",
+			"type": "string"
+		}
+	]
+}

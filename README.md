@@ -87,7 +87,7 @@ You can access the API at http://localhost:3000/v1/.
 - GET /docs/histogram - Access the OpenAPI documentation.
   
 #### Contracts & API Documentation
-- navigating to ```http://localhost:3000/v1/docs``` - will bring you to the OpenApi documentation.
+- navigating to http://localhost:3000/v1/docs - will bring you to the OpenApi documentation.
 
 #### Testing
 To run tests, use:

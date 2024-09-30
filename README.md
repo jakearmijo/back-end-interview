@@ -29,6 +29,7 @@ The Nutrien AG Solutions API is an Express-based RESTful API designed to serve v
 - Helmet: Middleware for securing HTTP headers.
 - Rate Limiter: Middleware to limit the number of requests from a client.
 - OpenAPI: Documentation for the API endpoints.
+- Zod to Open Api - [@asteasolutions/zod-to-openapi](https://www.npmjs.com/package/@asteasolutions/zod-to-openapi)
 
 ### Setup Instructions
 
@@ -84,6 +85,10 @@ You can access the API at http://localhost:3000/v1/.
 - GET /yearType/histogram - Retrieve all year types.
 - GET /year/histogram - Retrieve all years.
 - GET /docs/histogram - Access the OpenAPI documentation.
+- 
+#### Contracts & API Documentation
+- navigating to ```http://localhost:3000/v1/docs``` - will bring you to the OpenApi documentation.
+- built with 
 
 #### Testing
 To run tests, use:

@@ -43,23 +43,34 @@ Be prepared to talk about one aspect of this exercise you found interesting, or 
 - [ ] Send a link to the source, a repository URL or a zip file of your project the day before your interview day -> 
 - [x] Scaffold simple node express application - THAT RUNS
 - [ ] examine URL paths. Do we need several routes?
-- [ ] Create route files for 
-  - [ ] Attribute
+- [x] Create route files for 
+  - [x] Attribute
   - [x] Commodity
   - [x] CommodityType
-  - [ ] Units
-  - [ ] YearType
-  - [ ] Year
-  - [ ] Value
-- [ ] Create a GET request for TABLE LISTED BELOW that rill return JSON with the count of how many times each unique value appears in that column of the data
-  - [ ] Attribute
-  - [ ] Commodity
-  - [ ] CommodityType
-  - [ ] Units
-  - [ ] YearType
-  - [ ] Year
-  - [ ] Value
-- [ ] logic for looping
+  - [x] Units
+  - [x] YearType
+  - [x] Year
+- [x] Create controller files for 
+  - [x] Attribute
+  - [x] Commodity
+  - [x] CommodityType
+  - [x] Units
+  - [x] YearType
+  - [x] Year
+- [x] Create a GET request for TABLE LISTED BELOW that rill return JSON with the count of how many times each unique value appears in that column of the data
+  - [x] Attribute
+  - [x] Commodity
+  - [x] CommodityType
+  - [x] Units
+  - [x] YearType
+  - [x] Year
+- [ ] Testing
+  - [x] Attribute
+  - [x] Commodity
+  - [x] CommodityType
+  - [x] Units
+  - [x] YearType
+  - [x] Year
 - [ ] Visualizations
 - [ ] Testing strategies
 - [ ] Persisting data

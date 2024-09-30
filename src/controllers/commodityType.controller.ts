@@ -1,31 +1,21 @@
 import { Request, Response } from "express";
 import { convertCsvToJson, countCommodities } from "../common/utils/csvUtils";
-import {
-  CommodityTypeHistogramResponseSchema,
-  CommodityTypeHistogramResponse,
-} from "../schemas/commodityType.schema";
-import { redisClient } from "..";
-
+import { CommodityTypeHistogramResponseSchema } from "../schemas/commodityType.schema";
 export const getCommodityTypeHistogram = async (
   req: Request,
   res: Response
 ): Promise<any> => {
   try {
-    const redisKey = "Projection2021:CommodityType";
-    const cachedData = await redisClient.get(redisKey);
-    if (cachedData) {
-      const cachedResult: CommodityTypeHistogramResponse =
-        JSON.parse(cachedData);
-      return res.status(200).json(cachedResult);
-    }
-    const filePath = process.env.NODE_ENV === 'test' ? "TestProjection2021.csv" : "Projection2021.csv";
+    const filePath =
+      process.env.NODE_ENV === "test"
+        ? "TestProjection2021.csv"
+        : "Projection2021.csv";
     const jsonData = await convertCsvToJson(filePath);
     const result = countCommodities(jsonData, "CommodityType");
     CommodityTypeHistogramResponseSchema.parse(result);
-    await redisClient.set(redisKey, JSON.stringify(result), {
-      EX: 3600,
-    });
-
+    if (!result) {
+      return res.status(404).json(result);
+    }
     return res.status(200).json(result);
   } catch (error) {
     console.error("Error fetching data:", error);

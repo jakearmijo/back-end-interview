@@ -4,8 +4,8 @@ import { z } from "zod";
 extendZodWithOpenApi(z);
 
 export const CommodityTypeHistogramResponseSchema = z.object({
-  Crops: z.number().openapi({ description: "Amount of Crops" }),
-  "Livestock/Dairy": z.number().openapi({ description: "Amount of Livestock/Dairy" }),
+  Crops: z.number().openapi({ description: "Amount of Crops" }).optional(),
+  "Livestock/Dairy": z.number().openapi({ description: "Amount of Livestock/Dairy" }).optional(),
 }).openapi({
   title: "Commodity Type Histogram Response",
   description: "A histogram of commodity type data",

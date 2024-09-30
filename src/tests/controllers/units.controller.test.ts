@@ -11,7 +11,7 @@ describe('GET Units Endpoint', () => {
   it('should 404 if the incorrect path is used', async () => {
     const res = await request(app)
     .get('/units/histogram/fail')
-    expect(res.statusCode).toEqual(500)
+    expect(res.statusCode).toEqual(404)
     return
   })
 })

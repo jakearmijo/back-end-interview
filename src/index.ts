@@ -14,10 +14,10 @@ import { createClient } from "redis";
 import dotenv from "dotenv";
 dotenv.config();
 
-export const redisClient = createClient({
-  password: process.env.REDIS_PASSWORD,
-  socket: { host: process.env.REDIS_HOST, port: 12634 },
-});
+// export const redisClient = createClient({
+//   password: process.env.REDIS_PASSWORD,
+//   socket: { host: process.env.REDIS_HOST, port: 12634 },
+// });
 
 export const logger = pino({
   transport: {
@@ -58,13 +58,13 @@ if (process.env.NODE_ENV !== "test") {
     );
   });
 
-  (async () => {
-    try {
-      await redisClient.connect();
-      redisClient.on("error", (err) => console.log("Redis Client Error", err));
-      logger.info("💾 💾 Redis Connect successfully");
-    } catch (error: any) {
-      logger.info(`🔴 Unable to connect to Redis: ${error}`);
-    }
-  })();
+  // (async () => {
+  //   try {
+  //     await redisClient.connect();
+  //     redisClient.on("error", (err) => console.log("Redis Client Error", err));
+  //     logger.info("💾 💾 Redis Connect successfully");
+  //   } catch (error: any) {
+  //     logger.info(`🔴 Unable to connect to Redis: ${error}`);
+  //   }
+  // })();
 }

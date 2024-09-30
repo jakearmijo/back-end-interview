@@ -85,7 +85,7 @@ You can access the API at http://localhost:3000/v1/.
 - GET /yearType/histogram - Retrieve all year types.
 - GET /year/histogram - Retrieve all years.
 - GET /docs/histogram - Access the OpenAPI documentation.
-- 
+  
 #### Contracts & API Documentation
 - navigating to ```http://localhost:3000/v1/docs``` - will bring you to the OpenApi documentation.
 - built with 

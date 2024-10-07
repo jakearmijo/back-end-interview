@@ -11,17 +11,28 @@ interface DataRow {
  * @param attribute The name of the attribute to count.
  * @returns A record with commodity names as keys and their counts as values.
  */
-export function countCommodities(
-  data: DataRow[],
-  attribute: string
-): Record<string, number> {
-  const commodityCount: Record<string, number> = {};
+export function countCommodities(data: DataRow[], attribute: string): any[] {
+  const commodityCount: any[] = [];
+
+  const countMap: Record<string, number> = {};
 
   data.forEach((row) => {
     const element = row[attribute] as string;
     if (element) {
-      commodityCount[element] = (commodityCount[element] || 0) + 1;
+      if (countMap[element]) {
+        countMap[element]++;
+      } else {
+        countMap[element] = 1;
+        commodityCount.push({
+          [attribute]: element,
+          Count: 1,
+        });
+      }
     }
+  });
+
+  commodityCount.forEach((item) => {
+    item.Count = countMap[item[attribute]];
   });
 
   return commodityCount;

@@ -3,10 +3,10 @@ import { rateLimit } from "express-rate-limit";
 
 const rateLimiter = rateLimit({
   legacyHeaders: true,
-  limit: 100,
+  limit: 119,
   message: "Too many requests, please try again later.",
   standardHeaders: true,
-  windowMs: 10000,
+  windowMs: 1 * 60 * 1000,
   keyGenerator: (req: Request) => req.ip as string,
 });
 

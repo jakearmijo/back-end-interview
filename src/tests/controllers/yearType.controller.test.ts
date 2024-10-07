@@ -1,17 +1,17 @@
-import request from 'supertest';
-import { app } from '../..';
+import request from "supertest";
+import { app, apiVersion } from "../..";
 
-describe('GET YearType Endpoint', () => {
-  it('should get yearType histogram', async () => {
-    const res = await request(app)
-    .get('/yearType/histogram')
-    expect(res.statusCode).toEqual(200)
-    return
-  })
-  it('should 404 if the incorrect path is used', async () => {
-    const res = await request(app)
-    .get('/yearType/histogram/fail')
-    expect(res.statusCode).toEqual(404)
-    return
-  })
-})
+describe("GET YearType Endpoint", () => {
+  it("should get yearType histogram", async () => {
+    const res = await request(app).get(`/${apiVersion}/yearType/histogram`);
+    expect(res.statusCode).toEqual(200);
+    return;
+  });
+  it("should 404 if the incorrect path is used", async () => {
+    const res = await request(app).get(
+      `/${apiVersion}/yearType/histogram/fail`
+    );
+    expect(res.statusCode).toEqual(404);
+    return;
+  });
+});

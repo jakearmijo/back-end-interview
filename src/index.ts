@@ -32,7 +32,7 @@ export const logger = pino({
 });
 
 export const app = express();
-const apiVersion = "v1";
+export const apiVersion = "v1";
 
 app.use(requestLogger);
 app.use(rateLimiter);

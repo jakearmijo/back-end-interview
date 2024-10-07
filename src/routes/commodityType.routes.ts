@@ -19,6 +19,13 @@ commodityTypeRegistry.registerPath({
   responses: createApiResponse(CommodityTypeHistogramResponseSchema, "Success"),
 });
 
-commodityTypeRouter.get("/histogram", getCommodityTypeHistogram);
+commodityTypeRouter.get("/histogram", async (req, res) => {
+  try {
+    const result = await getCommodityTypeHistogram();
+    res.status(200).json(result);
+  } catch (error: any) {
+    res.status(500).json({ message: error.message });
+  }
+});
 
 export default commodityTypeRouter;

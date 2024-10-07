@@ -19,6 +19,12 @@ commodityRegistry.registerPath({
   ),
 });
 
-commodityRouter.get("/histogram", getCommodityHistogram);
-
+commodityRouter.get("/histogram", async (req, res) => {
+  try {
+    const result = await getCommodityHistogram();
+    res.status(200).json(result);
+  } catch (error: any) {
+    res.status(500).json({ message: error.message });
+  }
+});
 export default commodityRouter;

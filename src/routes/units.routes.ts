@@ -15,6 +15,12 @@ unitsRegistry.registerPath({
   responses: createApiResponse(UnitsResponseSchema, "Success"),
 });
 
-unitsRouter.get("/histogram", getUnitsHistogram);
-
+unitsRouter.get("/histogram", async (req, res) => {
+  try {
+    const result = await getUnitsHistogram();
+    res.status(200).json(result);
+  } catch (error: any) {
+    res.status(500).json({ message: error.message });
+  }
+});
 export default unitsRouter;
